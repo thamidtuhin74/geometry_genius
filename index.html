@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script>
+        // const colors = require('tailwindcss/colors')
+        // module.exports = {
+        // theme: {
+        //     colors: {
+        //     // Configure your color palette here
+        //     'white': '#ffffff',
+        //     'blue': '#1090D8',
+        //     'black': '#414141',
+        //     'silver': '#F1F1F1'
+        //     }
+        // }
+        // }
+    </script>
+</head>
+<body>
+    <header class="container ">
+        <div class="h-32 header-container w-full flex justify-between items-center my-12">
+            <div class="px-11 py-3">
+                <h3 class="text-5xl font-bold">Interactive</h3>
+                <p class="text-3xl font-medium">Geometry Genius</p>
+            </div>
+            <button class=" h-12 bg-blue-700 text-white mr-11 px-4 px-2 text-5 rounded-lg">Blog</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="container flex">
+            <div class="shapes w-3/4">
+                <div class="grid grid-cols-3 gri-rows-2 gap-6">
+                    <div class="triangle flex flex-col items-center">
+                        <img src="images/triangle.png" alt="triangle.png">
+                        <h3 class="mt-12 mb-3 text-xl font-bold">Triangle</h3>
+                        <p class="mb-6 text-base">Area(A) = 0.5 x b x h</p>
+                        <div class="sample-input flex inline w-2/3">
+                            <div class="w-1/2 flex inline">
+                                <input type="text" name="b" id="tri-base" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4" placeholder="b" >
+                                <p class="w-1/4 text-base">cm</p>
+                            </div>
+                            <div class="w-1/2 flex inline ">
+                                <input type="text" name="h" id="tri-height" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4" placeholder="h">
+                                <p class="w-1/4 text-base">cm</p>
+                            </div>
+                            
+                        </div>
+                        <button class="tri-area-calculator h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12">Calculate</button>
+                    </div>
+                    <div class="rectangle flex flex-col items-center">
+                        <img src="images/rectangle.png" alt="rectangle.png">
+                        <h3 class="mt-12 mb-3 text-xl font-bold">Rectangle</h3>
+                        <p class="mb-6 text-base">Area(A) = w x l</p>
+                        <div class="sample-input flex inline w-2/3">
+                            <div class="w-1/2 flex inline">
+                                <input type="text" name="w" id="rec-width" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4" placeholder="w" >
+                                <p class="w-1/4 text-base">cm</p>
+                            </div>
+                            <div class="w-1/2 flex inline ">
+                                <input type="text" name="h" id="rec-length" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4" placeholder="h">
+                                <p class="w-1/4 text-base">cm</p>
+                            </div>
+                            
+                        </div>
+                        <button class="rec-area-calculator h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12">Calculate</button>
+                    </div>
+                    <div class="parallelogram flex flex-col items-center">
+                        <img src="images/parallelogram.png" alt="parallelogram.png" class="h-100%">
+                        <h3 class="mt-12 mb-3 text-xl font-bold">Parallelogram</h3>
+                        <p class="mb-6 text-base">Area(A) = w x l</p>
+                        <div class="sample-input flex inline w-2/3">
+                            <div class="w-1/2 flex inline">
+                                <input type="text" name="b" id="para-base" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4" placeholder="b" >
+                                <p class="w-1/4 text-base">cm</p>
+                            </div>
+                            <div class="w-1/2 flex inline ">
+                                <input type="text" name="h" id="para-length" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4" placeholder="h">
+                                <p class="w-1/4 text-base">cm</p>
+                            </div>
+                            
+                        </div>
+                        <button class="para-area-calculator h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12">Calculate</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" w-1/4 text-center">
+                <h2 class="mt-12 mb-3 text-xl font-bold underline">Area Calculation</h2>
+                <div class="calculated-value">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/style.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.container{
+    width: 1820px;
+    margin: 0 auto;
+}
+.header-container{
+    background: rgba(16, 144, 216, 0.1);
+    border-radius: 8px;
+}
+.custom-bg{
+    background-color: #1090D8 !important;
+}
