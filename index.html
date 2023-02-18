@@ -69,7 +69,8 @@
                             </div>
                             
                         </div>
-                        <button class="rec-area-calculator h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12">Calculate</button>
+                        <!-- <button class="h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12" id="rec-area-calculator">Calculate</button> -->
+                        <button class="h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12" id="rec-area-calculator">Calculate</button>
                     </div>
                     <div class="parallelogram flex flex-col items-center">
                         <img src="images/parallelogram.png" alt="parallelogram.png" class="h-100%">
@@ -95,11 +96,22 @@
                 <h2 class="mt-12 mb-3 text-xl font-bold underline">Area Calculation</h2>
                 <div class="calculated-value">
 
+                    <ol class="list-decimal list-inside" id="displayed-items">
+                        
+                        <li class="trianglee hidden flex inline items-center" id="triangle" >
+                            <p class="w-1/4"><span id="shape-name">Triangle</span></p>
+                            <p class="w-1/4"><span id="area-value">12</span>cm<sup>2</sup></p>
+                            <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
+                        </li>
+                        
+                    </ol>
+
                 </div>
             </div>
         </section>
     </main>
     
     <script src="js/style.js"></script>
+    <script src="js/rectangle.js"></script>
 </body>
 </html>

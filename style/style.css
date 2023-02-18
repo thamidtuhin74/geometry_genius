@@ -9,3 +9,13 @@
 .custom-bg{
     background-color: #1090D8 !important;
 }
+li{
+    /* display: none !important; */
+}
+/* li{
+    counter-reset: section;
+}
+li::before {
+    counter-increment: section; 
+    content: "Section " counter(section) ": ";
+  } */
