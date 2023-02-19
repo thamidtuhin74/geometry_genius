@@ -9,36 +9,59 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+    <header class="container ">
+        <div class="h-32 header-container w-full flex justify-between items-center my-12">
+            <div class="px-11 py-3">
+                <h3 class="text-5xl font-bold">About Js</h3>
+                <p class="text-3xl font-medium">Geometry Genius</p>
+            </div>
+            <button class="h-12 bg-blue-700 text-white mr-11 px-4 px-2 text-5 rounded-lg" id="btn-back-to-home">Back to Home</button>
+        </div>
+    <!-- </header>
     <header class="container">
         <h2 class="text-center text-blue-700 text-7xl font-bold my-3 blog_heading">About Js</h2>
-    </header>
+    </header> -->
 
     <main class="container items-center">
         <div class="blogs_container grid grid-cols-2 grid-rows-2 gap-2 items-center p-8">
             <div class="blog p-4 bg-red-100 rounded-lg">
                 <h2 class="blog-title text-blue-700 text-3xl font-bold mb-8">What is DOM and what is the purpose of DOM?</h2>
-                <p class="blog-details text-1xl font-normal mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veritatis, possimus magnam amet, adipisci, excepturi omnis illo repellendus nobis tempora consequatur delectus accusantium fugiat?</p>
+                <p class="blog-details text-1xl font-normal mb-3">
+                    DOM stands for Document Object Model, that means it break out our document (HTML) into a object tree where every element of our document set as a node. So that we can access & modify our element easily.<br><br>
+                    DOM gives us a Model or a Layout of the Document so that we can modify our website structure, element & style. DOM helps us to make our website Interactive.
+                </p>
             </div>
 
             <div class="blog p-4 bg-blue-100 rounded-lg">
-                <h2 class="blog-title text-blue-700 text-3xl font-bold mb-8">What is JavaScript</h2>
-                <p class="blog-details text-1xl font-normal mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veritatis, possimus magnam amet, adipisci, excepturi omnis illo repellendus nobis tempora consequatur delectus accusantium fugiat?</p>
+                <h2 class="blog-title text-blue-700 text-3xl font-bold mb-8">How will you select HTML elements using DOM? Name the DOM methods.</h2>
+                <p class="blog-details text-1xl font-normal mb-3">
+                    We can select HTML elements using DOM by Id,ClassName,TagName,querySelector, querySelectorAll. Soem som methods are given below:
+                    <ul class="list-decimal list-inside">
+                        <li>getElementById</li>
+                        <li>getElementsByClassName</li>
+                        <li>getElementsByTagName</li>
+                        <li>querySelector()</li>
+                        <li>querySelectorAll()</li>
+                    </ul>
+                </p>
             </div>
 
             <div class="blog p-4 bg-green-100 rounded-lg">
-                <h2 class="blog-title text-blue-700 text-3xl font-bold mb-8">What is JavaScript</h2>
-                <p class="blog-details text-1xl font-normal mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veritatis, possimus magnam amet, adipisci, excepturi omnis illo repellendus nobis tempora consequatur delectus accusantium fugiat?</p>
+                <h2 class="blog-title text-blue-700 text-3xl font-bold mb-8">What is event bubble?</h2>
+                <p class="blog-details text-1xl font-normal mb-3">Event Bubbling is an important concept in the DOM (Document Object Model). Event Bubbling happens when an element receives an event, and the process starts with the element that triggered the event and then bubbled up to the containing elements in the hierarchy. In event bubbling, the event is captured and handled by the innermost element and then propagated to outer elements.</p>
             </div>
 
             <div class="blog p-4 bg-yellow-100 rounded-lg">
-                <h2 class="blog-title text-blue-700 text-3xl font-bold mb-8">What is JavaScript</h2>
-                <p class="blog-details text-1xl font-normal mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veritatis, possimus magnam amet, adipisci, excepturi omnis illo repellendus nobis tempora consequatur delectus accusantium fugiat?</p>
+                <h2 class="blog-title text-blue-700 text-3xl font-bold mb-8">What is a callback function and why will you use it?</h2>
+                <p class="blog-details text-1xl font-normal mb-3">A function called as Callback function when the function is passed into another function as an argument or parameter<br><br>
+                Callback Function useful for the asynchronous (objects or events that are not coordinated in time),which means these function(block of code to perform specific task) aren't really stop until they're completed. 
+            </p>
             </div>
         </div>
 
-        <div class="btn-container flex justify-center">
+        <!-- <div class="btn-container flex justify-center">
             <button class="h-14 text-center w-2/4 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-1" id="btn-back-to-home">Back to Home</button>
-        </div>
+        </div> -->
     </main>
 
 
