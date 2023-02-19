@@ -25,7 +25,7 @@ function displayCalculatedArea( shapeName, Area){
     else{
         document.getElementById(shapeName).style.display = 'flex';
         // document.getElementById(shapeName+'shape-name').innerHTML = shapeName;
-        document.getElementById(shapeName+'area-value').innerHTML = Area;
+        document.getElementById(shapeName+'area-value').innerHTML = Area.toFixed(2);
     }
     
 
@@ -116,9 +116,53 @@ document.getElementById('ellipse-area-calculator').addEventListener("click",func
     displayCalculatedArea('ellipse',ellipseArea);
 
 });
+// Random Color Function
+function randomColor() {
+    let color = [];
+    for (let i = 0; i < 3; i++) {
+      color.push(Math.floor(Math.random() * 256));
+    }
+    return 'rgb(' + color.join(', ') + ')';
+}
 
-const shapesElement = document.getElementsByClassName('shape-container');
-console.log(shapesElement);
-shapesElement.style.color = 'red';
+const TriShapesElement = document.getElementById('triangle-container');
+TriShapesElement.addEventListener('mouseenter', (event) => {
+    event.stopPropagation();
+    event.target.style.backgroundColor = randomColor();
+})
+const recShapesElement = document.getElementById('rectangle-container');
+recShapesElement.addEventListener('mouseenter', (event) => {
+    
+    event.target.style.backgroundColor = randomColor();
+    event.stopPropagation();
+})
+
+const paraShapesElement = document.getElementById('parallelogram-container');
+paraShapesElement.addEventListener('mouseenter', (event) => {
+    
+    event.target.style.backgroundColor = randomColor();
+    event.stopPropagation();
+})
+
+const rhombusShapesElement = document.getElementById('rhombus-container');
+rhombusShapesElement.addEventListener('mouseenter', (event) => {
+    
+    event.target.style.backgroundColor = randomColor();
+    event.stopPropagation();
+})
+const pentagonShapesElement = document.getElementById('pentagon-container');
+pentagonShapesElement.addEventListener('mouseenter', (event) => {
+    
+    event.target.style.backgroundColor = randomColor();
+    event.stopPropagation();
+})
+const ellipseShapesElement = document.getElementById('ellipse-container');
+ellipseShapesElement.addEventListener('mouseenter', (event) => {
+    
+    event.target.style.backgroundColor = randomColor();
+    event.stopPropagation();
+})
+
+
     
     

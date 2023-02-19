@@ -15,6 +15,10 @@
     top: 5%;
     right: 0%;
 }
+.shape-container{
+    padding-top: 50px;
+    border-radius: 8px;
+}
 li{
     /* display: none !important; */
 }
