@@ -9,6 +9,12 @@
 .custom-bg{
     background-color: #1090D8 !important;
 }
+
+.claculated_data_wrapper {
+    position: sticky;
+    top: 5%;
+    right: 0%;
+}
 li{
     /* display: none !important; */
 }

@@ -37,7 +37,7 @@
         <section class="container flex">
             <div class="shapes w-3/4">
                 <div class="grid grid-cols-3 gri-rows-2 gap-6">
-                    <div class="triangle flex flex-col items-center">
+                    <div class="shape-container triangle flex flex-col items-center">
                         <img src="images/triangle.png" alt="triangle.png">
                         <h3 class="mt-12 mb-3 text-xl font-bold">Triangle</h3>
                         <p class="mb-6 text-base">Area(A) = 0.5 x b x h</p>
@@ -54,7 +54,7 @@
                         </div>
                         <button class=" h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12" id="tri-area-calculator">Calculate</button>
                     </div>
-                    <div class="rectangle flex flex-col items-center">
+                    <div class="shape-container rectangle flex flex-col items-center">
                         <img src="images/rectangle.png" alt="rectangle.png">
                         <h3 class="mt-12 mb-3 text-xl font-bold">Rectangle</h3>
                         <p class="mb-6 text-base">Area(A) = w x l</p>
@@ -71,7 +71,7 @@
                         </div>
                         <button class="h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12" id="rec-area-calculator">Calculate</button>
                     </div>
-                    <div class="parallelogram flex flex-col items-center">
+                    <div class="shape-container parallelogram flex flex-col items-center">
                         <img src="images/parallelogram.png" alt="parallelogram.png" class="h-100%">
                         <h3 class="mt-12 mb-3 text-xl font-bold">Parallelogram</h3>
                         <p class="mb-6 text-base">Area(A) = w x l</p>
@@ -89,7 +89,7 @@
                         <button class="h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12" id="para-area-calculator">Calculate</button>
                     </div>
                     <!-- Rhombus -->
-                    <div class="rhombus flex flex-col items-center">
+                    <div class="shape-container rhombus flex flex-col items-center">
                         <img src="images/rhombus.png" alt="rhombus.png">
                         <h3 class="mt-12 mb-3 text-xl font-bold">Rhombus</h3>
                         <p class="mb-6 text-base">Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
@@ -108,7 +108,7 @@
                     </div>
 
                     <!-- Pentagon -->
-                    <div class="pentagon flex flex-col items-center">
+                    <div class="shape-container pentagon flex flex-col items-center">
                         <img src="images/pentagon.png" alt="pentagon.png">
                         <h3 class="mt-12 mb-3 text-xl font-bold">Pentagon</h3>
                         <p class="mb-6 text-base">Area(A) = 0.5 x p x b</p>
@@ -127,7 +127,7 @@
                     </div>
 
                     <!-- Ellipse -->
-                    <div class="ellipse flex flex-col items-center">
+                    <div class="shape-container ellipse flex flex-col items-center">
                         <img src="images/ellipse.png" alt="ellipse.png">
                         <h3 class="mt-12 mb-3 text-xl font-bold">Ellipse</h3>
                         <p class="mb-6 text-base">Area(A) = 0.5 x ab</p>
@@ -149,47 +149,49 @@
 
             </div>
             <div class=" w-1/4 text-center">
-                <h2 class="mt-12 mb-3 text-xl font-bold underline">Area Calculation</h2>
-                <div class="calculated-value">
+                <div class="claculated_data_wrapper">
+                    <h2 class="mt-12 mb-3 text-xl font-bold underline">Area Calculation</h2>
+                    <div class="calculated-value">
 
-                    <ol class="list-decimal list-inside" id="displayed-items">
-                        
-                        <li class="trianglee hidden flex inline items-center mb-3" id="triangle" >
-                            <p class="w-1/4"><span id="triangleshape-name">Triangle</span></p>
-                            <p class="w-1/4"><span class="pr-1" id="trianglearea-value">12</span>cm<sup>2</sup></p>
-                            <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
-                        </li>
+                        <ol class="list-decimal list-inside" id="displayed-items">
+                            
+                            <li class="trianglee hidden flex inline items-center mb-3" id="triangle" >
+                                <p class="w-1/4"><span id="triangleshape-name">Triangle</span></p>
+                                <p class="w-1/4"><span class="pr-1" id="trianglearea-value">12</span>cm<sup>2</sup></p>
+                                <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
+                            </li>
 
-                        <li class="hidden flex inline items-center mb-3" id="rectangle" >
-                            <p class="w-1/4"><span id="rectangleshape-name">Rectangle</span></p>
-                            <p class="w-1/4"><span class="pr-1" id="rectanglearea-value">12</span>cm<sup>2</sup></p>
-                            <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
-                        </li>
+                            <li class="hidden flex inline items-center mb-3" id="rectangle" >
+                                <p class="w-1/4"><span id="rectangleshape-name">Rectangle</span></p>
+                                <p class="w-1/4"><span class="pr-1" id="rectanglearea-value">12</span>cm<sup>2</sup></p>
+                                <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
+                            </li>
 
-                        <li class="hidden flex inline items-center mb-3" id="parallelogram" >
-                            <p class="w-1/4"><span id="shape-name">Parallelogram</span></p>
-                            <p class="w-1/4"><span class="pr-1" id="parallelogramarea-value">12</span>cm<sup>2</sup></p>
-                            <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
-                        </li>
+                            <li class="hidden flex inline items-center mb-3" id="parallelogram" >
+                                <p class="w-1/4"><span id="shape-name">Parallelogram</span></p>
+                                <p class="w-1/4"><span class="pr-1" id="parallelogramarea-value">12</span>cm<sup>2</sup></p>
+                                <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
+                            </li>
 
-                        <li class="hidden flex inline items-center mb-3" id="rhombus" >
-                            <p class="w-1/4"><span id="shape-name">Rhombus</span></p>
-                            <p class="w-1/4"><span class="pr-1" id="rhombusarea-value">12</span>cm<sup>2</sup></p>
-                            <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
-                        </li>
-                        <li class="hidden flex inline items-center mb-3" id="pentagon" >
-                            <p class="w-1/4"><span id="shape-name">Pentagon</span></p>
-                            <p class="w-1/4"><span class="pr-1" id="pentagonarea-value">12</span>cm<sup>2</sup></p>
-                            <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
-                        </li>
-                        <li class="hidden flex inline items-center mb-3" id="ellipse" >
-                            <p class="w-1/4"><span id="shape-name">Ellipse</span></p>
-                            <p class="w-1/4"><span class="pr-1" id="ellipsearea-value">12</span>cm<sup>2</sup></p>
-                            <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
-                        </li>
-                        
-                    </ol>
+                            <li class="hidden flex inline items-center mb-3" id="rhombus" >
+                                <p class="w-1/4"><span id="shape-name">Rhombus</span></p>
+                                <p class="w-1/4"><span class="pr-1" id="rhombusarea-value">12</span>cm<sup>2</sup></p>
+                                <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
+                            </li>
+                            <li class="hidden flex inline items-center mb-3" id="pentagon" >
+                                <p class="w-1/4"><span id="shape-name">Pentagon</span></p>
+                                <p class="w-1/4"><span class="pr-1" id="pentagonarea-value">12</span>cm<sup>2</sup></p>
+                                <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
+                            </li>
+                            <li class="hidden flex inline items-center mb-3" id="ellipse" >
+                                <p class="w-1/4"><span id="shape-name">Ellipse</span></p>
+                                <p class="w-1/4"><span class="pr-1" id="ellipsearea-value">12</span>cm<sup>2</sup></p>
+                                <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
+                            </li>
+                            
+                        </ol>
 
+                    </div>
                 </div>
             </div>
         </section>

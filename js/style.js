@@ -3,7 +3,7 @@ function get_input(idName){
     const inputElement = document.getElementById(idName);
     const input = parseFloat(inputElement.value);
     console.log(input);
-
+    inputElement.value = '';
     return input;
 }
 // Find area of Triangle , Rhombus , Pentagon
@@ -19,9 +19,15 @@ function getRecPara(input1,input2){
 
 function displayCalculatedArea( shapeName, Area){
 
-    document.getElementById(shapeName).style.display = 'flex';
-    // document.getElementById(shapeName+'shape-name').innerHTML = shapeName;
-    document.getElementById(shapeName+'area-value').innerHTML = Area;
+    if(isNaN(Area)){
+        alert("PLease Enter an number in the input field");
+    }
+    else{
+        document.getElementById(shapeName).style.display = 'flex';
+        // document.getElementById(shapeName+'shape-name').innerHTML = shapeName;
+        document.getElementById(shapeName+'area-value').innerHTML = Area;
+    }
+    
 
 }
 
@@ -33,8 +39,6 @@ document.getElementById('tri-area-calculator').addEventListener("click",function
     
     triArea = getTriRomPen(triBase,triHeight);
     console.log("Triangle area by Function = " + triArea);
-    
-
 
     displayCalculatedArea('triangle',triArea);
 
@@ -113,5 +117,8 @@ document.getElementById('ellipse-area-calculator').addEventListener("click",func
 
 });
 
+const shapesElement = document.getElementsByClassName('shape-container');
+console.log(shapesElement);
+shapesElement.style.color = 'red';
     
     
