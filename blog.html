@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Geometry Genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="container">
+        <h2 class="text-center text-blue-700 text-7xl font-bold my-3 blog_heading">About Js</h2>
+    </header>
+
+    <main class="container items-center">
+        <div class="blogs_container grid grid-cols-2 grid-rows-2 gap-2 items-center p-8">
+            <div class="blog p-4 bg-red-100 rounded-lg">
+                <h2 class="blog-title text-blue-700 text-3xl font-bold mb-8">What is DOM and what is the purpose of DOM?</h2>
+                <p class="blog-details text-1xl font-normal mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veritatis, possimus magnam amet, adipisci, excepturi omnis illo repellendus nobis tempora consequatur delectus accusantium fugiat?</p>
+            </div>
+
+            <div class="blog p-4 bg-blue-100 rounded-lg">
+                <h2 class="blog-title text-blue-700 text-3xl font-bold mb-8">What is JavaScript</h2>
+                <p class="blog-details text-1xl font-normal mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veritatis, possimus magnam amet, adipisci, excepturi omnis illo repellendus nobis tempora consequatur delectus accusantium fugiat?</p>
+            </div>
+
+            <div class="blog p-4 bg-green-100 rounded-lg">
+                <h2 class="blog-title text-blue-700 text-3xl font-bold mb-8">What is JavaScript</h2>
+                <p class="blog-details text-1xl font-normal mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veritatis, possimus magnam amet, adipisci, excepturi omnis illo repellendus nobis tempora consequatur delectus accusantium fugiat?</p>
+            </div>
+
+            <div class="blog p-4 bg-yellow-100 rounded-lg">
+                <h2 class="blog-title text-blue-700 text-3xl font-bold mb-8">What is JavaScript</h2>
+                <p class="blog-details text-1xl font-normal mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veritatis, possimus magnam amet, adipisci, excepturi omnis illo repellendus nobis tempora consequatur delectus accusantium fugiat?</p>
+            </div>
+        </div>
+
+        <div class="btn-container flex justify-center">
+            <button class="h-14 text-center w-2/4 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-1" id="btn-back-to-home">Back to Home</button>
+        </div>
+    </main>
+
+
+
+    <script>
+        document.getElementById('btn-back-to-home').addEventListener("click",function(){
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,3 +1,10 @@
+//Blog
+document.getElementById('btn_blog').addEventListener("click",function(){
+    window.location.href = 'blog.html';
+});
+
+
+
 //Take input value from by the function
 function get_input(idName){
     const inputElement = document.getElementById(idName);
