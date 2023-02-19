@@ -68,5 +68,50 @@ document.getElementById('para-area-calculator').addEventListener("click",functio
 
 });
 
+ // rhombus Functions
+document.getElementById('rhom-area-calculator').addEventListener("click",function(){
+    
+    const rhomBase = get_input('rhom-base');
+    const rhomHeight = get_input('rhom-height');
+    
+    rhomArea = getTriRomPen(rhomBase,rhomHeight);
+    console.log("Rhombus area by Function = " + rhomArea);
+    
+
+
+    displayCalculatedArea('rhombus',rhomArea);
+
+});
+
+// Pentagon Functions
+document.getElementById('pen-area-calculator').addEventListener("click",function(){
+    
+    const penP = get_input('pen-p');
+    const penB = get_input('pen-b');
+    
+    penArea = getTriRomPen(penP,penB);
+    console.log("Pentagon area by Function = " + penArea);
+    
+
+
+    displayCalculatedArea('pentagon',penArea);
+
+});
+// Ellipse Functions
+document.getElementById('ellipse-area-calculator').addEventListener("click",function(){
+    
+    const ellipseA = get_input('ellipse-a');
+    const ellipseB = get_input('ellipse-b');
+    const pi = Math.PI;
+    //pi*a*b
+    ellipseArea = pi * ellipseA * ellipseB;
+    console.log("Pentagon area by Function = " + ellipseArea);
+    
+
+
+    displayCalculatedArea('ellipse',ellipseArea);
+
+});
+
     
     

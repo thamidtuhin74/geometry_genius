@@ -69,7 +69,6 @@
                             </div>
                             
                         </div>
-                        <!-- <button class="h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12" id="rec-area-calculator">Calculate</button> -->
                         <button class="h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12" id="rec-area-calculator">Calculate</button>
                     </div>
                     <div class="parallelogram flex flex-col items-center">
@@ -89,6 +88,63 @@
                         </div>
                         <button class="h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12" id="para-area-calculator">Calculate</button>
                     </div>
+                    <!-- Rhombus -->
+                    <div class="rhombus flex flex-col items-center">
+                        <img src="images/rhombus.png" alt="rhombus.png">
+                        <h3 class="mt-12 mb-3 text-xl font-bold">Rhombus</h3>
+                        <p class="mb-6 text-base">Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                        <div class="sample-input flex inline w-2/3">
+                            <div class="w-1/2 flex inline items-center">
+                                <input type="text" name="b" id="rhom-base" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4 mr-3" placeholder="b" >
+                                <p class="w-1/4 text-base">cm</p>
+                            </div>
+                            <div class="w-1/2 flex inline items-center">
+                                <input type="text" name="h" id="rhom-height" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4 mr-3" placeholder="h">
+                                <p class="w-1/4 text-base">cm</p>
+                            </div>
+                            
+                        </div>
+                        <button class=" h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12" id="rhom-area-calculator">Calculate</button>
+                    </div>
+
+                    <!-- Pentagon -->
+                    <div class="pentagon flex flex-col items-center">
+                        <img src="images/pentagon.png" alt="pentagon.png">
+                        <h3 class="mt-12 mb-3 text-xl font-bold">Pentagon</h3>
+                        <p class="mb-6 text-base">Area(A) = 0.5 x p x b</p>
+                        <div class="sample-input flex inline w-2/3">
+                            <div class="w-1/2 flex inline items-center">
+                                <input type="text" name="b" id="pen-p" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4 mr-3" placeholder="b" >
+                                <p class="w-1/4 text-base">cm</p>
+                            </div>
+                            <div class="w-1/2 flex inline items-center">
+                                <input type="text" name="h" id="pen-b" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4 mr-3" placeholder="h">
+                                <p class="w-1/4 text-base">cm</p>
+                            </div>
+                            
+                        </div>
+                        <button class=" h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12" id="pen-area-calculator">Calculate</button>
+                    </div>
+
+                    <!-- Ellipse -->
+                    <div class="ellipse flex flex-col items-center">
+                        <img src="images/ellipse.png" alt="ellipse.png">
+                        <h3 class="mt-12 mb-3 text-xl font-bold">Ellipse</h3>
+                        <p class="mb-6 text-base">Area(A) = 0.5 x ab</p>
+                        <div class="sample-input flex inline w-2/3">
+                            <div class="w-1/2 flex inline items-center">
+                                <input type="text" name="b" id="ellipse-a" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4 mr-3" placeholder="b" >
+                                <p class="w-1/4 text-base">cm</p>
+                            </div>
+                            <div class="w-1/2 flex inline items-center">
+                                <input type="text" name="h" id="ellipse-b" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4 mr-3" placeholder="h">
+                                <p class="w-1/4 text-base">cm</p>
+                            </div>
+                            
+                        </div>
+                        <button class=" h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12" id="ellipse-area-calculator">Calculate</button>
+                    </div>
+                    
                 </div>
 
             </div>
@@ -116,9 +172,19 @@
                             <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
                         </li>
 
-                        <li class="hidden flex inline items-center mb-3" id="" >
-                            <p class="w-1/4"><span id="shape-name">Triangle</span></p>
-                            <p class="w-1/4"><span class="pr-1" id="area-value">12</span>cm<sup>2</sup></p>
+                        <li class="hidden flex inline items-center mb-3" id="rhombus" >
+                            <p class="w-1/4"><span id="shape-name">Rhombus</span></p>
+                            <p class="w-1/4"><span class="pr-1" id="rhombusarea-value">12</span>cm<sup>2</sup></p>
+                            <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
+                        </li>
+                        <li class="hidden flex inline items-center mb-3" id="pentagon" >
+                            <p class="w-1/4"><span id="shape-name">Pentagon</span></p>
+                            <p class="w-1/4"><span class="pr-1" id="pentagonarea-value">12</span>cm<sup>2</sup></p>
+                            <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
+                        </li>
+                        <li class="hidden flex inline items-center mb-3" id="ellipse" >
+                            <p class="w-1/4"><span id="shape-name">Ellipse</span></p>
+                            <p class="w-1/4"><span class="pr-1" id="ellipsearea-value">12</span>cm<sup>2</sup></p>
                             <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
                         </li>
                         
