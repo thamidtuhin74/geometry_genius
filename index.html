@@ -60,11 +60,11 @@
                         <p class="mb-6 text-base">Area(A) = w x l</p>
                         <div class="sample-input flex inline w-2/3">
                             <div class="w-1/2 flex inline items-center">
-                                <input type="text" name="w" id="rec-width" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4" placeholder="w" >
+                                <input type="text" name="w" id="rec-width" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4 mr-3" placeholder="w" >
                                 <p class="w-1/4 text-base">cm</p>
                             </div>
                             <div class="w-1/2 flex inline items-center">
-                                <input type="text" name="h" id="rec-length" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4" placeholder="h">
+                                <input type="text" name="h" id="rec-length" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4 mr-3" placeholder="h">
                                 <p class="w-1/4 text-base">cm</p>
                             </div>
                             
@@ -78,16 +78,16 @@
                         <p class="mb-6 text-base">Area(A) = w x l</p>
                         <div class="sample-input flex inline w-2/3">
                             <div class="w-1/2 flex inline items-center">
-                                <input type="text" name="b" id="para-base" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4" placeholder="b" >
+                                <input type="text" name="b" id="para-width" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4 mr-3" placeholder="b" >
                                 <p class="w-1/4 text-base">cm</p>
                             </div>
                             <div class="w-1/2 flex inline items-center">
-                                <input type="text" name="h" id="para-length" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4" placeholder="h">
+                                <input type="text" name="h" id="para-length" class="w-3/4 bg-[#f1f1f1] rounded text-base h-8 py-2 pl-4 mr-3" placeholder="h">
                                 <p class="w-1/4 text-base">cm</p>
                             </div>
                             
                         </div>
-                        <button class="para-area-calculator h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12">Calculate</button>
+                        <button class="h-14 w-4/5 bg-blue-700 text-white px-4 text-5 rounded-lg text-2xl font-bold m-12" id="para-area-calculator">Calculate</button>
                     </div>
                 </div>
 
@@ -98,9 +98,27 @@
 
                     <ol class="list-decimal list-inside" id="displayed-items">
                         
-                        <li class="trianglee hidden flex inline items-center" id="triangle" >
+                        <li class="trianglee hidden flex inline items-center mb-3" id="triangle" >
+                            <p class="w-1/4"><span id="triangleshape-name">Triangle</span></p>
+                            <p class="w-1/4"><span class="pr-1" id="trianglearea-value">12</span>cm<sup>2</sup></p>
+                            <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
+                        </li>
+
+                        <li class="hidden flex inline items-center mb-3" id="rectangle" >
+                            <p class="w-1/4"><span id="rectangleshape-name">Rectangle</span></p>
+                            <p class="w-1/4"><span class="pr-1" id="rectanglearea-value">12</span>cm<sup>2</sup></p>
+                            <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
+                        </li>
+
+                        <li class="hidden flex inline items-center mb-3" id="parallelogram" >
+                            <p class="w-1/4"><span id="shape-name">Parallelogram</span></p>
+                            <p class="w-1/4"><span class="pr-1" id="parallelogramarea-value">12</span>cm<sup>2</sup></p>
+                            <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
+                        </li>
+
+                        <li class="hidden flex inline items-center mb-3" id="" >
                             <p class="w-1/4"><span id="shape-name">Triangle</span></p>
-                            <p class="w-1/4"><span id="area-value">12</span>cm<sup>2</sup></p>
+                            <p class="w-1/4"><span class="pr-1" id="area-value">12</span>cm<sup>2</sup></p>
                             <button class=" h-12 bg-blue-700 text-white  px-2 text-lg rounded-lg " id="converTOmeter">Convert to m<sup>2</sup></button>
                         </li>
                         
